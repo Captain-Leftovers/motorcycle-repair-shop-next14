@@ -16,7 +16,7 @@ export default async function MotorcyclesForSale() {
 
 	return (
 		<MainContainer>
-			<h1 className='text-center bg-red-300'>For Sale</h1>
+			<h1 className='text-center'>For Sale</h1>
 		</MainContainer>
 	)
 }
