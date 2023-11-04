@@ -21,3 +21,4 @@ export default function CarouselMoto({ motoImagesArr, errMessage }: CarouselProp
 		</div>
 	)
 }
+``
