@@ -19,8 +19,8 @@ export default function FeatureSection() {
 						our team of skilled technicians is here to help.
 					</p>
 					<div  className='space-x-4'>
-						<Button  variant={'destructive'} className='' >Learn More</Button>
-						<Button  variant={'outline'} className=''>Contact Us</Button>
+						<Button  variant={'destructive'} className='hover:bg-pallette-orange-red' >Learn More</Button>
+						<Button  variant={'outline'} className='hover:bg-stone-900'>Contact Us</Button>
 					</div>
 				</div>
 				<div className="w-[47%] relative">

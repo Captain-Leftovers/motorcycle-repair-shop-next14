@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
+import { ToastProvider } from '@/providers/toast-provider'
 
-const inter = Inter({ subsets: ['latin'] })
+import { GeistSans, GeistMono } from 'geist/font'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +18,8 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className={cn(" scroll-smooth" ,inter.className)}>
+      <body className={cn(" scroll-smooth" ,GeistSans.className)}>
+        <ToastProvider />
         {children}
         </body>
     </html>

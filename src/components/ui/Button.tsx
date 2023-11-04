@@ -11,9 +11,9 @@ const buttonVariants = cva(
       variant: {
         default: "bg-stone-900 text-stone-50 hover:bg-stone-900/90 dark:bg-stone-50 dark:text-stone-900 dark:hover:bg-stone-50/90",
         destructive:
-          "bg-pallette-orange text-stone-50 hover:bg-pallette-orange/90 dark:bg-pallette-orange dark:text-stone-50 dark:hover:bg-pallette-orange/80",
+          "bg-pallette-orange hover:bg-pallette-orange-red  text-stone-50    dark:bg-pallette-orange dark:text-stone-50 transition  dark:hover:bg-pallette-orange/80",
         outline:
-          "border border-pallette-orange    dark:border-stone-800 dark:bg-stone-950 dark:hover:bg-stone-800 dark:hover:text-stone-50 hover:border-pallette-orange/80",
+          "border border-pallette-orange    dark:border-stone-800 dark:bg-stone-950 dark:hover:bg-stone-800 dark:hover:text-stone-50 hover:border-pallette-orange-red hover:bg-amber-50",
         secondary:
           "bg-stone-100 text-stone-900 hover:bg-stone-100/80 dark:bg-stone-800 dark:text-stone-50 dark:hover:bg-stone-800/80",
         ghost: "hover:bg-stone-100 hover:text-stone-900 dark:hover:bg-stone-800 dark:hover:text-stone-50",
