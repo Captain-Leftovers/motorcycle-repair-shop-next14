@@ -1,11 +1,15 @@
 "use server"
 
+import { unstable_noStore as noStore } from 'next/cache';
+
 import prismadb from "../prismadb"
 
 
 
 export async function getMotoFromDb() {
-	
+
+	noStore()
+
 	try {
 		const products = await prismadb.motoItem.findMany({
 			where: {
