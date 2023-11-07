@@ -34,3 +34,9 @@ export type MotoItemImages = {
 }
 
 export type MotoItemWithImagesType = MotoItem & {images: MotoItemImages[]}
+
+
+export type MotoData = {
+    data: MotoItemWithImagesType[] | null
+    errMessage: string | null
+}

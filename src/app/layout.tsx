@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={cn(' scroll-smooth', GeistSans.className)}>
+			<body className={cn(' scroll-smooth antialiased', GeistSans.className)}>
 				<ModalProvider />
 				<ToastProvider />
 				{children}

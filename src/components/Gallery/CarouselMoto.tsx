@@ -1,24 +1,30 @@
-import { MotoItemWithImagesType } from '@/types'
+"use client"
+
+import { MotoData } from '@/types'
 import MotoImageCard from '@/components/Gallery/MotoImageCard'
 import toast from 'react-hot-toast'
+import { useIsMounted } from '@/hooks/useIsMounted'
 
 type CarouselProps = {
-	motoImagesArr: MotoItemWithImagesType[]
-	errMessage: string | null
+	data : MotoData
 }
 
-export default function CarouselMoto({ motoImagesArr, errMessage }: CarouselProps) {
-	if (errMessage) {
-		toast.error(errMessage)
+export default  function CarouselMoto({ data }: CarouselProps) {
+
+	if ( useIsMounted() && data.data === null) {
+		toast.error('Something went wrong')
 	}
 	
 
+
+		
+	
+
 	return (
-		<div className="flex gap-8 overflow-hidden flex-wrap p-4 justify-center ">
-			{motoImagesArr.map((motoImage) => (
+		<div className="flex gap-8 overflow-hidden flex-wrap p-4 justify-center bg-red-400 ">
+			{data.data !== null && data.data.map((motoImage) => (
 				<MotoImageCard imageData={motoImage} key={motoImage.id} />
 			))}
 		</div>
 	)
 }
-``
