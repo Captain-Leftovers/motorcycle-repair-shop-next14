@@ -63,7 +63,7 @@ export default function PreviewModal() {
 										src={image.url}
 										alt="Image"
 										className="object-cover object-center rounded-lg"
-										layout="fill"
+										fill
 									/>
 									<span
 										className={cn(
