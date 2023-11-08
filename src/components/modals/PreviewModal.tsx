@@ -57,7 +57,7 @@ export default function PreviewModal() {
 								<TabsTrigger
 									key={image.id}
 									value={image.id}
-									className="h-24 mx-auto sm:h-40 aspect-square relative bg-transparent  hover:scale-105 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400 p-2 "
+									className="h-24 mx-auto sm:mx-0 sm:h-40 aspect-square relative bg-transparent  hover:scale-105 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400 p-2 "
 								>
 									<Image
 										src={image.url}
