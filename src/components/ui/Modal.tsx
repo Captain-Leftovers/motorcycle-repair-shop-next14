@@ -39,7 +39,7 @@ export const Modal: React.FC<ModalProps> = ({
 	}
 
 	return (
-		<Dialog open={isOpen} onOpenChange={onChange}>
+		<Dialog open={isOpen}  onOpenChange={onChange}>
 			<DialogContent className={cn('', className)}>
 				<DialogHeader>
 					<DialogTitle className='text-2xl'>{make}</DialogTitle>

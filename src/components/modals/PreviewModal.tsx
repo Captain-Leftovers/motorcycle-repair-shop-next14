@@ -29,7 +29,7 @@ export default function PreviewModal() {
 			description={motoItem.description || ''}
 			isOpen={previewModal.isOpen}
 			onClose={previewModal.onClose}
-			className=" max-w-7xl w-[calc(100%-8rem)] max-h-[calc(100vh-4rem)] overflow-y-auto"
+			className=" max-w-7xl w-[calc(100%-4rem)] max-h-[calc(100vh-8rem)]  sm:w-[calc(100%-8rem)] sm:max-h-[calc(100vh-4rem)] overflow-y-auto rounded-lg"
 		>
 			<div className="">
 				{motoItem.images.length > 0 ? (
@@ -57,7 +57,7 @@ export default function PreviewModal() {
 								<TabsTrigger
 									key={image.id}
 									value={image.id}
-									className="h-40 aspect-square relative bg-transparent  hover:scale-105 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400 p-2 "
+									className="h-24 mx-auto sm:h-40 aspect-square relative bg-transparent  hover:scale-105 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400 p-2 "
 								>
 									<Image
 										src={image.url}

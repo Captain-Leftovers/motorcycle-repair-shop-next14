@@ -38,7 +38,7 @@ export default function MainNav({}: MainNavProps) {
 					href={route.href}
 					key={route.href}
 					className={cn(
-						'relative group text-sm font-medium transition-colors hover:text-black'
+						'relative group text-sm md:text-base lg:text-lg font-medium transition-colors hover:text-black'
 					)}
 				>
 					{route.label}

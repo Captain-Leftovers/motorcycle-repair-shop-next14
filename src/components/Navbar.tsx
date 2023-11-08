@@ -12,14 +12,18 @@ type NavbarProps = {
 export default async function Navbar({ className }: NavbarProps) {
 	return (
 		<div
-			className={cn('z-50 backdrop-filter sticky top-0 h-16', className)}
+			className={cn('z-50 backdrop-filter h-16', className)}
 		>
 			<Container>
-				<div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
-					<Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
-						<p className="font-bold text-xl">Moto Revive</p>
-					</Link>
-					<MainNav />
+				<div className="relative lg:px-8 flex h-16 items-center sm:justify-start">
+					<div className="mx-auto flex sm:justify-start w-full">
+						<Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
+							<p className=" font-bold text-sm sm:text-base md:text-xl lg:text-2xl">
+								Moto Revive
+							</p>
+						</Link>
+						<MainNav />
+					</div>
 				</div>
 			</Container>
 		</div>

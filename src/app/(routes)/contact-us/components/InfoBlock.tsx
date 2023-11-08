@@ -28,7 +28,7 @@ export default function InfoBlock({ icon, textInfo }: InfoBlockProps) {
 				</p>
 				<div className={`text-xs sm:text-base mr-4 sm:mr-10 ml-auto opacity-0 ${animate ? 'animate-fade-in-out' : ''}`} onAnimationEnd={()=> setAnimate(false)}>Copied</div>
 				<div className=" w-4 sm:w-6 mr-4 sm:mr-10">
-					<CopySVG className="group-active:scale-110 transition" />
+					<CopySVG className="h-10 group-active:scale-110 transition" />
 				</div>
 			</div>
 		</div>

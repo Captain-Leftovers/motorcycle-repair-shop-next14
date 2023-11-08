@@ -36,7 +36,7 @@ export default function MotoImageCard({
 	return (
 		<div className="">
 			<ModalWrapper imageData={imageData}>
-				<Card className=" w-[500px] h-[500px] p-4 overflow-hidden bg-transparent  hover:scale-105 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400">
+				<Card className="w-[350px] h-[350px] sm:w-[500px] sm:h-[500px] p-4 overflow-hidden bg-transparent  hover:scale-105 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400">
 					<CardContent className="relative w-full h-4/5 flex flex-col justify-between">
 						<CardDescription className="truncate w-full overflow-hidden"></CardDescription>
 						<Image

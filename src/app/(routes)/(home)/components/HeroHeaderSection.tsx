@@ -5,13 +5,13 @@ import Link from 'next/link'
 
 export default function HeroHeaderSection() {
 	return (
-		<MainContainer className="sticky top-16 bg-background-light">
-			<section className="flex flex-col justify-around h-[calc(100vh-4rem)] text-black py-10 font-bold">
-				<div className=" flex flex-col justify-around items-center grow">
-					<h1 className="text-4xl font-semibold mx-20 text-center">
+		<MainContainer className=" bg-background-light">
+			<section className="flex flex-col justify-around h-[calc(100vh-4rem)] text-black py-10 font-bold px-4">
+				<div className=" flex flex-col justify-around items-center grow gap-4">
+					<h1 className="text-2xl w-full  sm:text-4xl font-semibold mx-20 text-center">
 						Професионален ремонт на мотоциклети в нашия сервиз.
 					</h1>
-					<p>
+					<p className='text-center'>
 						С доверие в нашия опит, мотоциклетът ви ще бъде отново
 						на пътя в най-кратки срокове.
 					</p>
