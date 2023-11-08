@@ -1,30 +1,27 @@
-"use client"
 
 import { MotoData } from '@/types'
 import MotoImageCard from '@/components/Gallery/MotoImageCard'
-import toast from 'react-hot-toast'
-import { useIsMounted } from '@/hooks/useIsMounted'
+
+import ToastMessage from '../ToastMessage'
 
 type CarouselProps = {
-	data : MotoData
+	data: MotoData
 }
 
-export default  function CarouselMoto({ data }: CarouselProps) {
 
-	if ( useIsMounted() && data.data === null) {
-		toast.error('Something went wrong')
-	}
-	
-
-
-		
-	
-
+export default function CarouselMoto({ data }: CarouselProps) {
 	return (
-		<div className="flex gap-8 overflow-hidden flex-wrap p-4 justify-center bg-red-400 ">
-			{data.data !== null && data.data.map((motoImage) => (
-				<MotoImageCard imageData={motoImage} key={motoImage.id} />
-			))}
-		</div>
+		<>
+		<ToastMessage message={data.errMessage} />
+			<div className="flex gap-8 flex-wrap p-4 justify-center">
+				{data.data !== null &&
+					data.data.map((motoImage) => (
+						<MotoImageCard
+							imageData={motoImage}
+							key={motoImage.id}
+						/>
+					))}
+			</div>
+		</>
 	)
 }

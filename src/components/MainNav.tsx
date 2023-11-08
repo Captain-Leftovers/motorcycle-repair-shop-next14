@@ -8,19 +8,16 @@ import { usePathname } from 'next/navigation'
 const routesArr: RoutesType[] = [
 	{
 		href: '',
-		label: 'Home',
+		label: 'Начало',
 	},
 	{
 		href: 'motorcycles-for-sale',
-		label: 'Motorcycles For Sale',
+		label: 'За Продан',
 	},
-	{
-		href: 'about',
-		label: 'About',
-	},
+
 	{
 		href: 'contact-us',
-		label: 'Contact Us',
+		label: 'За Връзка',
 	},
 ]
 

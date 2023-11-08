@@ -15,38 +15,36 @@ export default function FeaturesListSection() {
 						className="object-cover object-top"
 					/>
 				</div>
-				<ul className="w-[47%] flex flex-col justify-around">
+				<ul className="w-[47%] flex flex-col justify-around pr-4">
 					<li>
-						<h2 className="text-4xl">
-							Experienced Technicians, Quality Parts
+						<h2 className="text-4xl mb-2">
+							Опитни техници, качествени части
 						</h2>
 						<p>
-							Our repair shop is staffed with experienced
-							technicians who are skilled in handling all types of
-							motorcycle repairs. We use only high-quality parts
-							to ensure the best performance and longevity for
-							your bike. With our expertise, you can trust that
-							your motorcycle is in good hands.
+							В нашия ремонтен център имаме опитни техници,
+							специализирани в ремонтите на всички видове
+							мотоциклети. При ремонтите използваме само
+							висококачествени части, които гарантират най-добрата
+							производителност и дълготрайност на вашия
+							мотоциклет. С нашия опит, може да се доверите, че
+							вашият мотоциклет е в добри ръце.
 						</p>
 					</li>
 					<li>
-						<h1 className="text-4xl">Fast Service</h1>
+						<h1 className="text-4xl mb-2">Бързо обслужване</h1>
 						<p>
-							We understand that you want to get back on the road
-							as soon as possible. That&apos;s why we prioritize
-							fast service and strive to complete repairs in a
-							timely manner. Our efficient processes and dedicated
-							team ensure that you won&apos;t have to wait long to
-							get your motorcycle back in top shape.
+							Разбираме, че искате да се върнете на пътя възможно
+							най-скоро. Затова ние отдаваме приоритет на бързото
+							обслужване и се стремим да завършим ремонтите
+							навреме. Нашите ефективни процеси и предан екип
+							гарантират, че няма да трябва да чакате дълго, за да
+							получите мотоциклета си в отлично състояние.
 						</p>
 					</li>
 					<li>
-						<h1 className="text-4xl">Motorcycles for Sale</h1>
+						<h1 className="text-4xl mb-2">Мотоциклети на продажба</h1>
 						<p>
-							We also sell motorcycles. If you are looking for a
-							motorcycle, check out our inventory.If you have any
-							questions about our inventory, feel free to contact
-							us.
+						Също така продаваме мотоциклети. Ако търсите мотоциклет, проверете нашата наличност. Ако имате въпроси, не се колебайте да се свържете с нас.
 						</p>
 					</li>
 				</ul>

@@ -1,12 +1,13 @@
 
-import { Button } from '@/components/ui/Button'
 import MainContainer from '@/components/ui/MainContainer'
+import ContactSection from './components/ContactSection'
+import MapLocation from './components/MapLocation'
 
 export default function ContactUs() {
 	return (
-		<MainContainer>
-			<h1 className="text-blue-500 text-3xl">This is my Contact Us Page</h1>
-			<Button className="">Click me</Button>
+		<MainContainer className='mb-10 mt-20'>
+			<ContactSection />
+			<MapLocation />
 		</MainContainer>
 	)
 }

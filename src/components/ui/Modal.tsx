@@ -4,13 +4,17 @@ import {
 	Dialog,
 	DialogContent,
 	DialogDescription,
+	DialogFooter,
 	DialogHeader,
 	DialogTitle,
 } from '@/components/ui/Dialog'
 import { cn } from '@/lib/utils'
+import { Separator } from './Separator'
 
 interface ModalProps {
-	title: string
+	make: string
+	model: string
+	price: string | number
 	description: string
 	isOpen: boolean
 	onClose: () => void
@@ -19,7 +23,9 @@ interface ModalProps {
 }
 
 export const Modal: React.FC<ModalProps> = ({
-	title,
+	price,
+	model,
+	make,
 	description,
 	isOpen,
 	onClose,
@@ -36,10 +42,17 @@ export const Modal: React.FC<ModalProps> = ({
 		<Dialog open={isOpen} onOpenChange={onChange}>
 			<DialogContent className={cn('', className)}>
 				<DialogHeader>
-					<DialogTitle>{title}</DialogTitle>
-					<DialogDescription>{description}</DialogDescription>
+					<DialogTitle className='text-2xl'>{make}</DialogTitle>
+					<DialogDescription>{model}</DialogDescription>
 				</DialogHeader>
-				<div>{children}</div>
+				{children}
+				<DialogHeader>
+					<DialogTitle className="text-right mr-20 text-black font-semibold">
+						{price} <span className="">BGN</span>
+					</DialogTitle>
+					<Separator></Separator>
+					<DialogDescription className='w-4/5 mx-auto text-lg font-medium' >{description}</DialogDescription>
+				</DialogHeader>
 			</DialogContent>
 		</Dialog>
 	)

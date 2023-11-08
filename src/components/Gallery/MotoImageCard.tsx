@@ -1,4 +1,3 @@
-
 import {
 	Card,
 	CardContent,
@@ -10,10 +9,7 @@ import {
 import { MotoItemWithImagesType } from '@/types'
 
 import Image from 'next/image'
-
 import ModalWrapper from '@/components/ModalWrapper'
-
-export const revalidate = 0
 
 function getCoverImage(placeholder: string, imageData: MotoItemWithImagesType) {
 	if (
@@ -38,12 +34,11 @@ export default function MotoImageCard({
 	const cover = getCoverImage('/images/placeholder.png', imageData)
 
 	return (
-		<div>
+		<div className="">
 			<ModalWrapper imageData={imageData}>
 				<Card className=" w-[500px] h-[500px] p-4 overflow-hidden bg-transparent  hover:scale-105 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400">
 					<CardContent className="relative w-full h-4/5 flex flex-col justify-between">
 						<CardDescription className="truncate w-full overflow-hidden"></CardDescription>
-
 						<Image
 							src={cover}
 							alt={imageData.model != null ? imageData.model : ''}
@@ -62,7 +57,7 @@ export default function MotoImageCard({
 							</CardDescription>
 						</CardHeader>
 						<CardDescription className="text-black font-semibold">
-							{imageData.price} <span className="">BGN</span>
+							{imageData.price} <span className="font-sans">лв</span>
 						</CardDescription>
 					</CardFooter>
 				</Card>

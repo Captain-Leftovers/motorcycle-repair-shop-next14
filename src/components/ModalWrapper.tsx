@@ -1,5 +1,6 @@
 "use client"
 
+import usePreviewModal from "@/hooks/usePreviewModal"
 import { MotoItemWithImagesType } from "@/types"
 
 
@@ -12,11 +13,15 @@ type ModalWrapperProps = {
   }
 export default function ModalWrapper({imageData, children}: ModalWrapperProps) {
 
-    //TODO useModal here pass props do stuff
+  const motoModal = usePreviewModal()
+
+  const showModalHandler = () => {
+    motoModal.onOpen(imageData)
+  }
+
 
 return (
-  <div className="cursor-pointer" onClick={()=> console.log('modal hereee')
-   } >
+  <div className="cursor-pointer" onClick={showModalHandler} >
      {children}
   </div>
   )
