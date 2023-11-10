@@ -43,7 +43,6 @@ export async function sendContactFormToEmail(input: {
 	const { name, email, message } = input
 
 	try {
-		//TODO custumise the domain name and the email in the from field | first register it in resend website
 		await resend.emails.send({
 			from: 'Contact Form <onboarding@resend.dev>',
 			to: ['motorevive.bg@gmail.com'],
