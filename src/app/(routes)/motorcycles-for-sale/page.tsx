@@ -6,7 +6,7 @@ import GallerySkeleton from './components/Skeleton/GallerySkeleton'
 
 export default async function MotorcyclesForSale() {
 	return (
-		<MainContainer className="py-10">
+		<MainContainer className="py-10 grow">
 			<Heading
 				title="Изберете вашия следващ мотоциклет тук."
 				description=""
