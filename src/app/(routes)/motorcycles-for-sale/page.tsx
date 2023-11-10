@@ -6,7 +6,7 @@ import GallerySkeleton from './components/Skeleton/GallerySkeleton'
 
 export default async function MotorcyclesForSale() {
 	return (
-		<MainContainer className="py-10 min-h-[87vh]">
+		<MainContainer className="py-10">
 			<Heading
 				title="Изберете вашия следващ мотоциклет тук."
 				description=""
@@ -17,6 +17,3 @@ export default async function MotorcyclesForSale() {
 		</MainContainer>
 	)
 }
-
-
-

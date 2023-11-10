@@ -3,7 +3,6 @@ import featureListImage from '/public/images/featuresList.jpg'
 import MainContainer from '@/components/ui/MainContainer'
 
 export default function FeaturesListSection() {
-	//TODO : fix layout in mobil;e
 	return (
 		<MainContainer className=" bg-slate-600">
 			<section className="  flex flex-col-reverse sm:flex-row justify-between gap-y-10 sm:gap-y-0 text-text-light py-10">

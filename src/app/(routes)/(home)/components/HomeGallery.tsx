@@ -65,4 +65,3 @@ export default function HomeGallery({}: HomeGalleryProps) {
 	)
 }
 
-//TODO see why image not showing

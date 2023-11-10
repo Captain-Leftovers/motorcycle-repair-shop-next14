@@ -15,4 +15,3 @@ export default function Footer() {
 	)
 }
 
-// TODO :  footer not visible!!! fix it
