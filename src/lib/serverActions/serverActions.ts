@@ -13,6 +13,8 @@ export async function getMotoFromDb() {
 		const products = await prismadb.motoItem.findMany({
 			where: {
 				sold: false,
+				onHold: false,
+				featured: true,
 			},
 			include: {
 				images: true,

@@ -21,6 +21,7 @@ export default function GalleryTab({ imageUrl }: GalleryTabProps) {
 							src={imageUrl}
 							alt=""
 							className="object-cover object-center"
+							sizes='(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33vw'
 						/>
 					</span>
 					<span

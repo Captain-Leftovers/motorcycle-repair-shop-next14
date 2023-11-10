@@ -30,7 +30,7 @@ export default function HomeGallery({}: HomeGalleryProps) {
 	return (
 		<MainContainer className=" bg-stone-200">
 			<section className="flex flex-col sm:flex-row justify-between items-center bg-transparent w-full h-screen text-black py-10 font-bold">
-				<div className="sm:w-[47%] flex flex-col items-center bg-purple-300 justify-center gap-8 h-full pl-4">
+				<div className="sm:w-[47%] flex flex-col items-center justify-center gap-8 h-full pl-4">
 					<h2 className="text-2xl">
 					Разгледайте наличните мотоциклети.
 					</h2>
@@ -39,12 +39,13 @@ export default function HomeGallery({}: HomeGalleryProps) {
 							href="/motorcycles-for-sale"
 							className="bg-pallette-orange hover:bg-pallette-orange-red  text-stone-50    dark:bg-pallette-orange dark:text-stone-50 transition  dark:hover:bg-pallette-orange/80  h-10 px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-stone-950 dark:focus-visible:ring-stone-300"
 						>
-							Мотоциклети на продажба
+							Мотоциклети за продажба
 						</Link>
 						
 						<Link
 							href="/contact-us"
-							className=" w-full inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-stone-950 dark:focus-visible:ring-stone-300 hover:bg-stone-300/20 hover:text-stone-900 dark:hover:bg-stone-800 dark:hover:text-stone-50 h-10 px-4 py-2"
+							className="border border-gray-300 w-full inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-stone-950 dark:focus-visible:ring-stone-300 hover:bg-stone-300/20 hover:text-stone-900 dark:hover:bg-stone-800 dark:hover:text-stone-50 h-10 px-4 py-2"
+						
 						>
 							Свържете се с нас
 						</Link>

@@ -64,6 +64,7 @@ export default function PreviewModal() {
 										alt="Image"
 										className="object-cover object-center rounded-lg"
 										fill
+										sizes='(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33vw'
 									/>
 									<span
 										className={cn(

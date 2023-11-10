@@ -30,6 +30,7 @@ export default function GalleryModalCard({ images }: GalleryModalCardProps) {
 								src={image.url}
 								alt="Image"
 								className="object-cover object-center"
+								sizes='(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33vw'
 							/>
 						</div>
 					</Tab.Panel>

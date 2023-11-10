@@ -43,8 +43,9 @@ export default function MotoImageCard({
 							src={cover}
 							alt={imageData.model != null ? imageData.model : ''}
 							fill
-							sizes="full"
+							sizes="(max-width: 640px) 350px, 500px"
 							className="object-cover object-center rounded-lg "
+							priority
 						/>
 					</CardContent>
 					<CardFooter className="flex justify-between items-center ">
