@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={cn(' scroll-smooth antialiased  m-0 p-0', GeistSans.className)}>
+			<body className={cn(' scroll-smooth antialiased  m-0 p-0 overflow-y-scroll', GeistSans.className)}>
 				<ModalProvider />
 				<ToastProvider />
 				{children}
