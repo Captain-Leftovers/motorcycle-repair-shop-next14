@@ -16,6 +16,9 @@ module.exports = {
 			},
 		},
 		extend: {
+			fontFamily: {
+				sans: ['var(--font-main-name)'],
+			},
 			backgroundImage: {
 				'gradient-radial':
 					'linear-gradient(82deg, var(--tw-gradient-stops))',

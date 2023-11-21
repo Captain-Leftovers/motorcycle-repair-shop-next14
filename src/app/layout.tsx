@@ -3,8 +3,19 @@ import './globals.css'
 import { cn } from '@/lib/utils'
 import { ToastProvider } from '@/providers/ToastProvider'
 
-import { GeistSans } from 'geist/font'
+import { GeistSans} from 'geist/font'
 import { ModalProvider } from '@/providers/ModalProvider'
+
+import { Krona_One } from 'next/font/google'
+
+const caveat_brush = Krona_One({
+	weight: '400',
+	display: 'swap',
+	subsets: ['latin'],
+	variable: '--font-main-name',
+
+
+})
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -19,7 +30,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={cn(' scroll-smooth antialiased  m-0 p-0 overflow-y-scroll', GeistSans.className)}>
+			<body className={cn(' scroll-smooth antialiased  m-0 p-0 overflow-y-scroll',caveat_brush.variable, GeistSans.className)}>
 				<ModalProvider />
 				<ToastProvider />
 				{children}

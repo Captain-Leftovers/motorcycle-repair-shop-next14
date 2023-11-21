@@ -12,7 +12,7 @@ export default function FeaturesListSection() {
 						fill
 						alt=""
 						sizes="100%"
-						className="object-cover object-top"
+						className="object-cover object-center"
 					/>
 				</div>
 				<ul className="sm:w-[47%] flex flex-col justify-center gap-10 sm:gap-20 pr-4 pl-4 sm:pl-0">
