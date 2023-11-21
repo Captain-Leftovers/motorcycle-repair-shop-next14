@@ -17,7 +17,7 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['var(--font-main-name)'],
+				krona: ['var(--font-main-name)'],
 			},
 			backgroundImage: {
 				'gradient-radial':
