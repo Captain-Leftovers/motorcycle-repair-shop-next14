@@ -1,6 +1,12 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+	title: "Bahamata Service - за продан",
+	description: "Мотоциклети за продан",
+}
 export default function Layout({ children }: { children: React.ReactNode }) {
 
 	return <div className="h-screen flex flex-col">

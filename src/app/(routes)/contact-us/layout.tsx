@@ -1,6 +1,12 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+	title: "Bahamata Service - за контакт",
+	description: "Свържи се с нас",
+}
 export default function Layout({ children }: { children: React.ReactNode }) {
 
 	return <>
