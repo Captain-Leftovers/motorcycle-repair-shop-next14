@@ -17,7 +17,7 @@ export default async function Navbar({ className }: NavbarProps) {
 			<Container>
 				<div className="relative lg:px-8 flex h-16 items-center sm:justify-start">
 					<div className="mx-auto flex flex-col sm:justify-start w-full">
-						<Link href="/" className="mx-auto flex sm:mt-4  gap-x-2">
+						<Link href="/" className="mx-auto fle mb-2 sm:mt-4  gap-x-2">
 							<p className="font-bold text-sm sm:text-xl md:text-xl lg:text-2xl font-sans">
 								Bahamata Service
 							</p>
