@@ -5,7 +5,7 @@ import ContactSection from './components/ContactSection'
 
 export default function ContactUs() {
 	return (
-		<MainContainer className='grow'>
+		<MainContainer className='grow py-10'>
 			<ContactSection />
 			{/* <MapLocation /> */}
 		</MainContainer>
