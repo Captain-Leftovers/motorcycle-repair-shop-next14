@@ -19,6 +19,9 @@ export async function POST(request: Request) {
 			text: message,
 			react: EmailTemplate({ name, senderEmail: email, message }),
 		})
+
+		console.log('data', data);
+		
 	} catch (e: unknown) {
 		console.log('e', e)
 
