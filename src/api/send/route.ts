@@ -6,15 +6,15 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
 	const body = await request.json()
-	console.log('body', body);
-	
+	console.log('body', body)
+
 	const { name, email, message } = body
 
 	let data
 	try {
 		data = await resend.emails.send({
 			from: 'Contact Form <onboarding@resend.dev>',
-			to: ['motorevive.bg@gmail.com'],
+			to: ['bboyforce@live.fr'],
 			subject: 'Repair Shop Website Contact Form',
 			text: message,
 			react: EmailTemplate({ name, senderEmail: email, message }),
