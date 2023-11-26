@@ -50,6 +50,7 @@ export default function PreviewModal() {
 									className="object-contain object-center rounded-lg"
 									fill
 								/>
+								{motoItem.upcoming && <div className='text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold'>Скоро се очаква в наличност</div>}
 							</TabsContent>
 						))}
 						<TabsList className="flex flex-wrap justify-start h-max p-4 gap-4">

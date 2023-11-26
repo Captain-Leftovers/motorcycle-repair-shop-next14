@@ -47,7 +47,7 @@ export default function MotoImageCard({
 							className="object-cover object-center rounded-lg "
 							priority
 							/>
-							{imageData.upcoming && <div className='text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold'>Скоро в наличност</div>}
+							{imageData.upcoming && <div className='text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold'>Скоро се очаква в наличност</div>}
 											</CardContent>
 					<CardFooter className="flex justify-between items-center ">
 						<CardHeader className="overflow-hidden pl-0">
