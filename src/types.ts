@@ -22,6 +22,7 @@ export type MotoItem = {
     featured: boolean;
     sold: boolean;
     onHold: boolean;
+    upcoming: boolean;
     addedByUserId: string;
     updatedAt: Date;
     createdAt: Date;

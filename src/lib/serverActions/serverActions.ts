@@ -24,6 +24,7 @@ export async function getMotoFromDb() {
 			},
 		})
 
+		
 		return { data: products, errMessage: null }
 	} catch (error) {
 		console.log('[PRODUCTS_GET]', error)
