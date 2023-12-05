@@ -5,7 +5,7 @@ import MainContainer from '@/components/ui/MainContainer'
 export default function FeaturesListSection() {
 	return (
 		<MainContainer className=" bg-slate-600">
-			<section className="  flex flex-col-reverse sm:flex-row justify-between gap-y-10 sm:gap-y-0 text-text-light py-10">
+			<section className="sm:min-h-screen sm:max-h-fit  flex flex-col-reverse sm:flex-row justify-between gap-y-10 sm:gap-y-0 text-text-light py-10">
 				<div className="h-[400px] sm:h-auto sm:w-[47%] relative">
 					<Image
 						src={featureListImage}
@@ -17,7 +17,7 @@ export default function FeaturesListSection() {
 				</div>
 				<ul className="sm:w-[47%] flex flex-col justify-center gap-10 sm:gap-20 pr-4 pl-4 sm:pl-0">
 					<li>
-						<h2 className="text-2xl md:text-4xl mb-2">
+						<h2 className="text-2xl lg:text-4xl mb-2">
 							Опитни техници, качествени части
 						</h2>
 						<p className="">
@@ -31,7 +31,7 @@ export default function FeaturesListSection() {
 						</p>
 					</li>
 					<li>
-						<h2 className="text-2xl md:text-4xl mb-2">
+						<h2 className="text-2xl lg:text-4xl mb-2">
 							Бързо обслужване
 						</h2>
 						<p className="">
@@ -44,7 +44,7 @@ export default function FeaturesListSection() {
 						</p>
 					</li>
 					<li>
-						<h2 className="text-2xl md:text-4xl mb-2">
+						<h2 className="text-2xl lg:text-4xl mb-2">
 							Мотоциклети на продажба
 						</h2>
 						<p className="">

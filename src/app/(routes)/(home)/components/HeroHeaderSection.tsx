@@ -6,9 +6,9 @@ import Link from 'next/link'
 export default function HeroHeaderSection() {
 	return (
 		<MainContainer className=" bg-background-light">
-			<section className="flex flex-col  justify-around h-[calc(100vh-4rem)] text-black py-10 font-bold px-4">
-				<div className=" flex flex-col justify-around items-center grow gap-4">
-					<h1 className="text-2xl w-full  sm:text-4xl font-semibold mx-20 text-center">
+			<section className="flex flex-col justify-around  h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)] text-black py-4 lg:pt-10 xl:pt-16 font-bold px-4">
+				<div className=" flex flex-col items-center grow gap-4">
+					<h1 className="text-2xl w-full  lg:text-4xl font-semibold mx-20 text-center">
 						Професионален ремонт на мотоциклети в нашия сервиз.
 					</h1>
 					<p className='text-center'>
@@ -22,7 +22,7 @@ export default function HeroHeaderSection() {
 						Пишете ни
 					</Link>
 				</div>
-				<div className="h-3/4 relative mt-2">
+				<div className="min-h-[100px] h-3/4 relative mt-2">
 					<Image
 						src={heroPng}
 						fill

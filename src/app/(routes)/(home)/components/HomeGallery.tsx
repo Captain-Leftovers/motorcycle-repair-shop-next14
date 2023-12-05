@@ -31,7 +31,7 @@ export default function HomeGallery({}: HomeGalleryProps) {
 		<MainContainer className=" bg-stone-200">
 			<section className="flex flex-col sm:flex-row justify-between items-center bg-transparent w-full h-screen text-black py-10 font-bold">
 				<div className="sm:w-[47%] flex flex-col items-center justify-center gap-8 h-full pl-4">
-					<h2 className="text-2xl">
+					<h2 className="text-2xl lg:text-4xl  text-center">
 					Разгледайте наличните мотоциклети.
 					</h2>
 					<div className="lg:space-x-4 flex lg:flex-row mx-auto flex-col gap-4">
