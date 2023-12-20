@@ -32,7 +32,8 @@ export default function MotoImageCard({
 	imageData: MotoItemWithImagesType
 }) {
 	const cover = getCoverImage('/images/placeholder.png', imageData)
-
+	console.log(cover);
+	
 	return (
 		<div className="">
 			<ModalWrapper imageData={imageData}>
