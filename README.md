@@ -4,8 +4,6 @@
 </p>
 
 
-# Motorcycle Repair Shop Website
-
 ## Introduction
 
 This project comprises a website for a motorcycle repair shop, designed to showcase motorcycles available for sale and provide information about repair services. Aimed at enhancing online visibility and customer engagement, the site features a dedicated page for sales listings and a centralized management portal for updating website content, including photos and descriptions of the motorcycles.
