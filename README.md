@@ -13,10 +13,6 @@ This project comprises a website for a motorcycle repair shop, designed to showc
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technology Stack](#technology-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
