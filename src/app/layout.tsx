@@ -8,6 +8,8 @@ import { ModalProvider } from '@/providers/ModalProvider'
 
 import { Krona_One } from 'next/font/google'
 
+import { Analytics } from "@vercel/analytics/react"
+
 const caveat_brush = Krona_One({
 	weight: '400',
 	display: 'swap',
@@ -34,6 +36,7 @@ export default function RootLayout({
 				<ModalProvider />
 				<ToastProvider />
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	)
