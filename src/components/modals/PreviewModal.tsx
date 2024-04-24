@@ -50,7 +50,21 @@ export default function PreviewModal() {
 									className="object-contain object-center rounded-lg"
 									fill
 								/>
-								{motoItem.upcoming && <div className='text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold'>Скоро се очаква в наличност</div>}
+								{!motoItem.upcoming && !motoItem.sold && (
+									<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-green-400 font-semibold">
+										В наличност
+									</div>
+								)}
+								{motoItem.upcoming && !motoItem.sold && (
+									<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold">
+										Скоро се очаква в наличност
+									</div>
+								)}
+								{!motoItem.upcoming && motoItem.sold && (
+									<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-red-400 font-semibold">
+										Продаден
+									</div>
+								)}
 							</TabsContent>
 						))}
 						<TabsList className="flex flex-wrap justify-start h-max p-4 gap-4">
@@ -58,14 +72,14 @@ export default function PreviewModal() {
 								<TabsTrigger
 									key={image.id}
 									value={image.id}
-									className="h-24 mx-auto sm:mx-0 sm:h-40 aspect-square relative bg-transparent  hover:scale-105 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400 p-2 "
+									className="h-24 mx-auto sm:mx-0 sm:h-40 aspect-square relative bg-transparent  hover:scale-105 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400 hover:contrast-125 p-2 "
 								>
 									<Image
 										src={image.url}
 										alt="Image"
 										className="object-cover object-center rounded-lg"
 										fill
-										sizes='(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33vw'
+										sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 33vw"
 									/>
 									<span
 										className={cn(

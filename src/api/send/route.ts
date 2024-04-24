@@ -2,14 +2,10 @@ import { EmailTemplate } from '@/app/(routes)/contact-us/components/EmailTemplat
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-
-// TODO : see why email is not changing 
-
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
 	const body = await request.json()
-	console.log('body', body)
 
 	const { name, email, message } = body
 
@@ -22,16 +18,9 @@ export async function POST(request: Request) {
 			text: message,
 			react: EmailTemplate({ name, senderEmail: email, message }),
 		})
-
-		console.log('data', data);
-		
 	} catch (e: unknown) {
-		console.log('e', e)
-
 		return NextResponse.json({ error: e })
 	}
-
-	console.log('data', data)
 
 	return NextResponse.json(data)
 }

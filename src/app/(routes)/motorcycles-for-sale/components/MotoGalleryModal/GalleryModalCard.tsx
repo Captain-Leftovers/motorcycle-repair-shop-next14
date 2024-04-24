@@ -10,7 +10,6 @@ type GalleryModalCardProps = {
 	images: MotoItemImages[]
 }
 export default function GalleryModalCard({ images }: GalleryModalCardProps) {
-	console.log(images)
 
 	return (
 		<Tab.Group as="div" className="flex flex-col-reverse">

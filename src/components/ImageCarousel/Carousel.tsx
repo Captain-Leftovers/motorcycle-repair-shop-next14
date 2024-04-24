@@ -7,7 +7,6 @@ type CarouselProps = {
 	images: ApiImageType[]
 }
 export default function Carousel({ images }: CarouselProps) {
-	console.log(images)
 
 	return (
 		<ImageCard  content={images[0]}/>

@@ -5,7 +5,7 @@ type MapLocationProps = {
   }
 export default function MapLocation({}: MapLocationProps) {
 
-//TODO : add google map correct location and add the bussiness to maps first
+//TODO : requested to remove location for now
 return (
     <div className="w-[calc(100%-2rem)] mx-auto aspect-video rounded-lg overflow-hidden my-10 outline outline-1 outline-gray-300 hover:outline-pallette-orange transition-colors duration-1000 ease-out" >
 

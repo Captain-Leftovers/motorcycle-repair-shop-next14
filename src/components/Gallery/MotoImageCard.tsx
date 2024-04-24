@@ -32,12 +32,11 @@ export default function MotoImageCard({
 	imageData: MotoItemWithImagesType
 }) {
 	const cover = getCoverImage('/images/placeholder.png', imageData)
-	console.log(cover);
-	
+
 	return (
 		<div className="">
 			<ModalWrapper imageData={imageData}>
-				<Card className="w-[350px] h-[350px] sm:w-[500px] sm:h-[500px] p-4 overflow-hidden bg-transparent  hover:scale-105 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400">
+				<Card className="w-[350px] h-[350px] sm:w-[500px] sm:h-[500px] p-4 overflow-hidden bg-transparent  hover:scale-105 hover:contrast-125 transition-all ease-out duration-500 hover:bg-stone-50 group hover:border-stone-400">
 					<CardContent className="relative w-full h-4/5 flex flex-col justify-between">
 						<CardDescription className="truncate w-full overflow-hidden"></CardDescription>
 						<Image
@@ -47,9 +46,23 @@ export default function MotoImageCard({
 							sizes="(max-width: 640px) 350px, 500px"
 							className="object-cover object-center rounded-lg "
 							priority
-							/>
-							{imageData.upcoming && <div className='text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold'>Скоро се очаква в наличност</div>}
-											</CardContent>
+						/>
+						{imageData.upcoming && !imageData.sold && (
+							<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold">
+								Скоро се очаква в наличност
+							</div>
+						)}
+						{!imageData.upcoming && imageData.sold && (
+							<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-red-400 font-semibold">
+								Продаден
+							</div>
+						)}
+						{!imageData.upcoming && !imageData.sold && (
+							<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-green-400 font-semibold">
+								В наличност
+							</div>
+						)}
+					</CardContent>
 					<CardFooter className="flex justify-between items-center ">
 						<CardHeader className="overflow-hidden pl-0">
 							<CardTitle className="truncate w-full overflow-hidden">
@@ -60,7 +73,8 @@ export default function MotoImageCard({
 							</CardDescription>
 						</CardHeader>
 						<CardDescription className="text-black font-semibold">
-							{imageData.price} <span className="font-sans">лв</span>
+							{imageData.price}{' '}
+							<span className="font-sans">лв</span>
 						</CardDescription>
 					</CardFooter>
 				</Card>
