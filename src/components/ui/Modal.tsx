@@ -39,19 +39,21 @@ export const Modal: React.FC<ModalProps> = ({
 	}
 
 	return (
-		<Dialog open={isOpen}  onOpenChange={onChange}>
-			<DialogContent className={cn('', className)}>
+		<Dialog open={isOpen} onOpenChange={onChange}>
+			<DialogContent className={cn(className, 'flex flex-col')}>
 				<DialogHeader>
-					<DialogTitle className='text-2xl'>{make}</DialogTitle>
+					<DialogTitle className="text-2xl">{make}</DialogTitle>
 					<DialogDescription>{model}</DialogDescription>
 				</DialogHeader>
 				{children}
-				<DialogHeader>
-					<DialogTitle className="text-right mr-20 text-black font-semibold">
-						{price} <span className="">BGN</span>
+				<DialogHeader className="w-full mx-auto">
+					<DialogTitle className="md:text-right md:mr-20 text-black font-semibold">
+						{price} <span className="">лв</span>
 					</DialogTitle>
 					<Separator></Separator>
-					<DialogDescription className='w-4/5 mx-auto text-lg font-medium' >{description}</DialogDescription>
+					<DialogDescription className="w-full sm:w-4/5 mx-auto text-lg font-medium">
+						<p className='w-full break-words' >{description}</p>
+					</DialogDescription>
 				</DialogHeader>
 			</DialogContent>
 		</Dialog>
