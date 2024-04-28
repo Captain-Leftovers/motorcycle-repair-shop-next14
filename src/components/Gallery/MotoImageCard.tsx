@@ -47,21 +47,35 @@ export default function MotoImageCard({
 							className="object-cover object-center rounded-lg "
 							priority
 						/>
-						{imageData.upcoming && !imageData.sold && (
-							<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold">
-								Скоро се очаква в наличност
-							</div>
-						)}
-						{!imageData.upcoming && imageData.sold && (
-							<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-red-400 font-semibold">
-								Продаден
-							</div>
-						)}
-						{!imageData.upcoming && !imageData.sold && (
-							<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-green-400 font-semibold">
-								В наличност
-							</div>
-						)}
+
+						{imageData.upcoming &&
+							!imageData.sold &&
+							!imageData.onHold && (
+								<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold">
+									Скоро се очаква в наличност
+								</div>
+							)}
+						{!imageData.upcoming &&
+							imageData.sold &&
+							!imageData.onHold && (
+								<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-red-400 font-semibold">
+									Продаден
+								</div>
+							)}
+						{!imageData.upcoming &&
+							!imageData.sold &&
+							imageData.onHold && (
+								<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-yellow-300 font-semibold">
+									Резервиран
+								</div>
+							)}
+						{!imageData.upcoming &&
+							!imageData.sold &&
+							!imageData.onHold && (
+								<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-green-400 font-semibold">
+									В наличност
+								</div>
+							)}
 					</CardContent>
 					<CardFooter className="flex justify-between items-center ">
 						<CardHeader className="overflow-hidden pl-0">

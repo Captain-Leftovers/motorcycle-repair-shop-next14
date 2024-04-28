@@ -50,21 +50,35 @@ export default function PreviewModal() {
 									className="object-contain object-center rounded-lg"
 									fill
 								/>
-								{!motoItem.upcoming && !motoItem.sold && (
-									<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-green-400 font-semibold">
-										В наличност
-									</div>
-								)}
-								{motoItem.upcoming && !motoItem.sold && (
-									<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold">
-										Скоро се очаква в наличност
-									</div>
-								)}
-								{!motoItem.upcoming && motoItem.sold && (
-									<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-red-400 font-semibold">
-										Продаден
-									</div>
-								)}
+								{!motoItem.upcoming &&
+									!motoItem.sold &&
+									!motoItem.onHold && (
+										<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-green-400 font-semibold">
+											В наличност
+										</div>
+									)}
+								{motoItem.upcoming &&
+									!motoItem.sold &&
+									!motoItem.onHold && (
+										<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-cyan-400 font-semibold">
+											Скоро се очаква в наличност
+										</div>
+									)}
+								{!motoItem.upcoming &&
+									motoItem.sold &&
+									!motoItem.onHold && (
+										<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-red-400 font-semibold">
+											Продаден
+										</div>
+									)}
+
+								{!motoItem.upcoming &&
+									!motoItem.sold &&
+									motoItem.onHold && (
+										<div className="text-center absolute left-0 bottom-0 w-full z-50 bg-yellow-300 font-semibold">
+											Резервиран
+										</div>
+									)}
 							</TabsContent>
 						))}
 						<TabsList className="flex flex-wrap justify-start h-max p-4 gap-4">
